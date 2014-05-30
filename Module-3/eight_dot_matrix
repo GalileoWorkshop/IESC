@@ -1,3 +1,5 @@
+
+// Access this http://www.pial.net/8x8-dot-matrix-font-generator-based-on-javascript-and-html/
 // 2-dimensional array of row pin numbers:
 const int row[8] = {
   2,7,19,5,13,18,12,16 };
