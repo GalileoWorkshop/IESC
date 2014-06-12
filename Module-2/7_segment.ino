@@ -1,15 +1,5 @@
 /*
-Make Projects: How to Drive a 7 Segment LED
- URL:
- By: Riley Porter
- This is an introduction on how to drive a 7 Segment LED using only a Arduino.  This is 
- not the best way to do this.  This is meant to be a learning excercise.  In later tutorials
- I will show you how to use an dedicated IC using SPI or a Shift Register.  Enjoy.
- 
- 
- digitalWrite(A, HIGH) = turn off the "A" segment in the LED display
- digitalWrite(B, LOW)  = turn on the "B" segment in the LED display
- 
+7 Segment LED
  */
 
 
