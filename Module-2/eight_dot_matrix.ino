@@ -1,10 +1,10 @@
 
-// 2-dimensional array of row pin numbers:
+// 1-dimensional array of row pin numbers:
 const int row[8] = {
   2,7,19,5,13,18,12,16 };
 
 
-// 2-dimensional array of column pin numbers:
+// 1-dimensional array of column pin numbers:
 const int col[8] = {
   6,11,10,3,17,4,8,9  };
 
