@@ -12,13 +12,13 @@ Make Projects: How to Drive a 7 Segment LED
  
  */
 
-#define A 8
-#define B 9
-#define C 2
-#define D 3
-#define E 4
-#define F 5
-#define G 6
+const int A = 8;
+const int B = 9;
+const int C = 2;
+const int D = 3;
+const int E = 4;
+const int F = 5;
+const int G = 6;
 
 void clr()
 {
