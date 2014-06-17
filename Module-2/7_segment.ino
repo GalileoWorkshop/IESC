@@ -10,6 +10,8 @@ Make Projects: How to Drive a 7 Segment LED
  digitalWrite(A, HIGH) = turn off the "A" segment in the LED display
  digitalWrite(B, LOW)  = turn on the "B" segment in the LED display
  
+ 
+ Made some modifications for a common-anode 7 segment.  Changed #define to const and typo on some code.
  */
 
 const int A = 8;
@@ -109,12 +111,12 @@ void one()
 {
   //Displays 1
   digitalWrite(D, HIGH);
-  digitalWrite(E, LOW);
-  digitalWrite(F, LOW);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
   digitalWrite(G, HIGH);
   digitalWrite(A, HIGH);
-  digitalWrite(B, HIGH);
-  digitalWrite(C, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
 }
 
 void two()
@@ -228,6 +230,7 @@ void zero()
 void LoopDisplay()
 {
   //Loop through all Chars and Numbers
+ 
   char_A();
   delay(1000);
   char_B();
@@ -260,6 +263,7 @@ void LoopDisplay()
   delay(1000);
   zero();
   delay(1000);
+
 }
 
 void setup()
