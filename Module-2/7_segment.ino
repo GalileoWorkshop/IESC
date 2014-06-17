@@ -1,7 +1,16 @@
 /*
-7 Segment LED
+Make Projects: How to Drive a 7 Segment LED
+ URL:
+ By: Riley Porter
+ This is an introduction on how to drive a 7 Segment LED using only a Arduino.  This is 
+ not the best way to do this.  This is meant to be a learning excercise.  In later tutorials
+ I will show you how to use an dedicated IC using SPI or a Shift Register.  Enjoy.
+ 
+ 
+ digitalWrite(A, HIGH) = turn off the "A" segment in the LED display
+ digitalWrite(B, LOW)  = turn on the "B" segment in the LED display
+ 
  */
-
 
 #define A 8
 #define B 9
@@ -10,7 +19,6 @@
 #define E 4
 #define F 5
 #define G 6
-
 
 void clr()
 {
@@ -23,11 +31,7 @@ void clr()
   digitalWrite(F, HIGH);
   digitalWrite(G, HIGH);
 
-
 }
-
-
-
 
 void char_A()
 {
@@ -39,7 +43,6 @@ void char_A()
   digitalWrite(B, LOW);
   digitalWrite(C, LOW);
 }
-
 
 void char_B()
 {
@@ -53,7 +56,6 @@ void char_B()
   digitalWrite(C, LOW);
 }
 
-
 void char_C()
 {
   //Displays C
@@ -65,7 +67,6 @@ void char_C()
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
 }
-
 
 void char_D()
 {
@@ -79,7 +80,6 @@ void char_D()
   digitalWrite(C, LOW);
 }
 
-
 void char_E()
 {
   //Displays E
@@ -91,7 +91,6 @@ void char_E()
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
 }
-
 
 void char_F()
 {
@@ -106,8 +105,6 @@ void char_F()
 }
 
 
-
-
 void one()
 {
   //Displays 1
@@ -119,7 +116,6 @@ void one()
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
 }
-
 
 void two()
 {
@@ -133,7 +129,6 @@ void two()
   digitalWrite(C, HIGH);
 }
 
-
 void three()
 {
   //Displays 3
@@ -145,7 +140,6 @@ void three()
   digitalWrite(B, LOW);
   digitalWrite(C, LOW);
 }
-
 
 void four()
 {
@@ -159,7 +153,6 @@ void four()
   digitalWrite(C, LOW);
 }
 
-
 void five()
 {
   //Displays 5
@@ -171,7 +164,6 @@ void five()
   digitalWrite(B, HIGH);
   digitalWrite(C, LOW);
 }
-
 
 void six()
 {
@@ -185,7 +177,6 @@ void six()
   digitalWrite(C, LOW);
 }
 
-
 void seven()
 {
   //Displays 7
@@ -197,7 +188,6 @@ void seven()
   digitalWrite(B, LOW);
   digitalWrite(C, LOW);
 }
-
 
 void eight()
 {
@@ -211,7 +201,6 @@ void eight()
   digitalWrite(C, LOW);
 }
 
-
 void nine()
 {
   //Displays 9
@@ -224,7 +213,6 @@ void nine()
   digitalWrite(C, LOW);
 }
 
-
 void zero()
 {
   //Displays 0
@@ -236,7 +224,6 @@ void zero()
   digitalWrite(B, LOW);
   digitalWrite(C, LOW);
 }
-
 
 void LoopDisplay()
 {
@@ -275,7 +262,6 @@ void LoopDisplay()
   delay(1000);
 }
 
-
 void setup()
 {
   //Setup our pins
@@ -287,15 +273,10 @@ void setup()
   pinMode(F, OUTPUT);
   pinMode(G, OUTPUT);
   Serial.begin(9600);  //Begin serial communcation
-
-
 }
-
 
 void loop()
 {
   Serial.println("Starting\n");
   LoopDisplay();
-
-
-}
+ }
