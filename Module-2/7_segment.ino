@@ -1,6 +1,6 @@
 /*
-Make Projects: How to Drive a 7 Segment LED
- This code was adapted from original made by By: Riley Porter
+Module 2 : 7 Segment LED
+ This code was adapted from original made by Riley Porter
  
  Changes:
   > Made some modifications for a common-anode 7 segment (as used on this workshop).  
